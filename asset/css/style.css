@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: red;
+    --secondary-color: blue;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+/* Common */
+a {
+    text-decoration: none;
+}
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100vw - 48px);
+    margin: 0 auto;
+}
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    opacity: 0.8;
+}

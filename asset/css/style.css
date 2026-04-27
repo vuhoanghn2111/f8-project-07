@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #936CDD;
+    --primary-color: #936cdd;
     --secondary-color: #201830;
+    --desc-color: #665f73;
 }
 html {
     font-size: 62.5%;
@@ -29,7 +30,14 @@ button {
     max-width: calc(100vw - 48px);
     margin: 0 auto;
 }
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
+}
 .btn {
+    text-align: center;
     min-width: var(--width);
     height: var(--height);
     border-radius: var(--radius);
@@ -39,9 +47,43 @@ button {
     --width: 157px;
     --height: 62px;
     --radius: 8px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
 }
 .btn:hover {
     opacity: 0.8;
+}
+.heading-h1 {
+    color: var(--secondary-color);
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 114.286% */
+}
+.heading-h2 {
+    color: var(--secondary-color);
+    /* H2 */
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 123.81% */
+}
+.desc-p1 {
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.btn-1 {
+    color: var(--secondary-color);
+    /* Button 1 */
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
 }
 /* Header */
 header {
@@ -89,13 +131,13 @@ header {
 .header-sub__item {
     margin-bottom: 10px;
 }
-.action>* {
+.action > * {
     text-align: center;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
 }
-.action{
+.action {
     display: flex;
     align-items: center;
 }
@@ -104,6 +146,57 @@ header {
 }
 .btn-up {
     margin-left: 28px;
-    background: var(--secondary-color); 
+    background: var(--secondary-color);
     color: white;
+    --width: 116px;
+    --height: 48px;
+}
+/* Hero */
+.hero {
+    margin-top: 110px;
+}
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-media {
+    width: calc(570 / 1170 * 100%);
+}
+/* Media */
+
+/* Content */
+.hero-heading {
+    width: 470px;
+    position: relative;
+}
+.hero-heading::after {
+    content: url(../css/img/content-deco.svg);
+    position: absolute;
+    left: 33px;
+    top: 103px;
+    z-index: -1;
+}
+.hero-desc {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 470px;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+}
+.listen-btn {
+    margin-left: 28px;
+    margin-right: 8px;
+}
+.listen-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

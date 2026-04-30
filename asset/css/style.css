@@ -399,3 +399,44 @@ header {
     top: 3px;
     margin-left: 8px;
 }
+.dir-social {
+    width: calc(570 / 1170 * 100%);
+    height: 524px;
+    position: relative;
+}
+.dir-social::after {
+    content: "";
+    display: inline-block;
+    width: 287px;
+    height: 287px;
+    border-radius: 287px;
+    opacity: 0.4;
+    background: #ff9051;
+    filter: blur(129px);
+    position: absolute;
+    top: 56px;
+    left: 142px;
+}
+.dir-social__item {
+    position: absolute;
+}
+.dir-social__1 {
+    left: 0;
+    top: 164px;
+}
+.dir-social__2 {
+    top: 0;
+    left: 185px;
+}
+.dir-social__3 {
+    top: 59px;
+    right: 0;
+}
+.dir-social__4 {
+    right: 48px;
+    bottom: 40px;
+}
+.dir-social__5 {
+    left: 169px;
+    bottom: 0;
+}

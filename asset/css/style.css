@@ -77,6 +77,15 @@ button {
     font-weight: 400;
     line-height: 30px; /* 166.667% */
 }
+.desc-p2 {
+    color: var(--desc-color);
+
+    /* P2 */
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
 .btn-1 {
     color: var(--secondary-color);
     /* Button 1 */
@@ -174,6 +183,8 @@ header {
 .hero-img {
     max-width: 100%;
     min-height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
 }
 .hero-audio__player {
     width: 194px;
@@ -355,4 +366,36 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+/* directory */
+.directory {
+    margin-top: 160px;
+}
+.directory-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dir-heading {
+    width: 470px;
+    position: relative;
+}
+.dir-heading::after {
+    content: url(../css/img/dir-deco.svg);
+    position: absolute;
+    display: inline-block;
+    right: 55px;
+    bottom: -21px;
+    z-index: -1;
+}
+.dir-desc {
+    width: 470px;
+    margin-top: 18px;
+    margin-bottom: 38px;
+}
+.dir-btn::after {
+    content: url(../css/img/play-dir.svg);
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
 }

@@ -654,7 +654,8 @@ header {
     border-radius: 50%;
     background: var(--primary-color);
 }
-.epi-slide__dot + .epi-slide__dot {
+.slide__dot + .slide__dot,
+.test-slide .slide__dot:not(:last-child) {
     width: 8px;
     height: 8px;
     border-radius: 8px;
@@ -694,12 +695,6 @@ header {
     position: absolute;
     bottom: 0;
     left: 74px;
-}
-.test-slide .slide__dot:not(:last-child) {
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background: #d8d5de;
 }
 .test-content {
     margin-left: 130px;

@@ -648,14 +648,13 @@ header {
     left: 50%;
     transform: translateX(-50%);
 }
-.slide__dot {
+.slide__dot.active {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: var(--primary-color);
 }
-.slide__dot + .slide__dot,
-.test-slide .slide__dot:not(:last-child) {
+.slide__dot {
     width: 8px;
     height: 8px;
     border-radius: 8px;

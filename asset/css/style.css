@@ -434,7 +434,7 @@ header {
     height: 524px;
     position: relative;
 }
-.dir-social::after {
+.dir-social::after, .testimonial::after {
     content: "";
     display: inline-block;
     width: 287px;
@@ -663,10 +663,17 @@ header {
 /* testimonial */
 .testimonial {
     margin-top: 168px;
+    position: relative;
+    overflow: hidden;
 }
 .test-inner {
     display: flex;
     align-items: center;
+}
+.testimonial::after {
+    top: 0;
+    right: -162px;
+    left: auto;
 }
 .test-media {
     display: flex;

@@ -801,3 +801,40 @@ header {
     left: 35px;
     bottom: 45px;
 }
+/* footer */
+footer {
+    padding: 100px 0 38px 0;
+    background: #fff8f3;
+}
+.footer-inner {
+    display: flex;
+}
+.footer-desc {
+    margin-top: 14px;
+    margin-bottom: 18px;
+    width: 270px;
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.footer-social__link:hover .social-background {
+    fill: var(--primary-color);
+}
+.footer-right {
+    margin-left: 116px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 90px;
+}
+.footer-list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-listen__list {
+    flex-direction: row;
+}

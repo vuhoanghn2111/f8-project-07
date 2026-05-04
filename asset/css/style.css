@@ -434,7 +434,8 @@ header {
     height: 524px;
     position: relative;
 }
-.dir-social::after, .testimonial::after {
+.dir-social::after,
+.testimonial::after {
     content: "";
     display: inline-block;
     width: 287px;
@@ -722,5 +723,81 @@ header {
     margin-bottom: 18px;
 }
 .test-author {
-    color: #ABA6B5;
+    color: #aba6b5;
+}
+/* letter */
+.letter {
+    margin-top: 160px;
+}
+.letter-inner {
+    padding: 100px;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    position: relative;
+}
+.letter-title {
+    display: flex;
+    align-items: center;
+}
+.letter-heading {
+    width: 470px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.letter-heading::after {
+    content: url(../css/img/letter-deco.svg);
+    position: absolute;
+    display: inline-block;
+    bottom: -15px;
+    left: -3px;
+    z-index: -1;
+}
+.letter-desc {
+    width: 470px;
+    columns: #aba6b5;
+}
+.contact-form {
+    margin-top: 70px;
+}
+.form-row {
+    display: flex;
+    gap: 30px;
+}
+.form-group {
+    flex-grow: 1;
+}
+.form-input {
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    background: #2b213f;
+    border: none;
+    outline: none;
+    padding: 18px 28px;
+    color: #aba6b5;
+}
+.form-error {
+    visibility: hidden;
+    font-size: 13px;
+    margin-top: 7px;
+    color: wheat;
+}
+.form-group:has(:invalid:not(:placeholder-shown)) .form-error {
+    visibility: visible;
+}
+.letter-deco {
+    position: absolute;
+}
+.letter-deco__1 {
+    top: 26px;
+    left: 528px;
+}
+.letter-deco__2 {
+    top: 180px;
+    right: 27px;
+}
+.letter-deco__3 {
+    left: 35px;
+    bottom: 45px;
 }

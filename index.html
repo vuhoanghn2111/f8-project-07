@@ -660,6 +660,72 @@
                     </div>
                 </div>
             </div>
+            <!-- letter -->
+            <div class="letter">
+                <div class="container">
+                    <div class="letter-inner">
+                        <div class="letter-title">
+                            <h2 class="letter-heading heading-h2">
+                                Subscribe and get update regularly
+                            </h2>
+                            <p class="letter-desc desc-p2">
+                                Rebuilt for simplicity and speed, so you can
+                                spend more time discovering and listening to
+                                great podcasts. Get all the updates of latest
+                                podcasts.
+                            </p>
+                        </div>
+                        <!-- form group -->
+                        <div class="contact-form">
+                            <form
+                                action="https://api-gateway.f8.edu.vn/action_page.php"
+                                autocomplete="off"
+                                method="post"
+                            >
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            required
+                                            minlength="2"
+                                            class="form-input desc-p2"
+                                            placeholder="Your name"
+                                        />
+                                        <p class="form-error">
+                                            Nhập ít nhất 2 ký tự
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            class="form-input desc-p2"
+                                            placeholder="Your email address"
+                                            required
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                            autocomplete="off"
+                                        />
+                                        <p class="form-error">
+                                            Nhập đúng email
+                                        </p>
+                                    </div>
+                                    <!-- submit -->
+                                    <button type="submit" class="submit-btn btn">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- deco -->
+                         <img src="./asset/css/img/Star 1.svg" alt="star1" class="letter-deco letter-deco__1">
+                         <img src="./asset/css/img/Star 2.svg" alt="star2" class="letter-deco letter-deco__2">
+                         <img src="./asset/css/img/Star 3.svg" alt="star3" class="letter-deco letter-deco__3">
+                    </div>
+                </div>
+            </div>
         </main>
         <footer></footer>
     </body>
